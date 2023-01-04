@@ -7,21 +7,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner S = new Scanner(System.in);
 
-        //ВИСОКОСНЫЕ ГОДА:
-        System.out.println("задание - ВИСОКОСНЫЕ ГОДА.");
-        System.out.print("Введите диапазон лет, для вычисления високосных:\n" +
-                "от ");
+        //Р’РРЎРћРљРћРЎРќР«Р• Р“РћР”Рђ:
+        System.out.println("Р·Р°РґР°РЅРёРµ - Р’РРЎРћРљРћРЎРќР«Р• Р“РћР”Рђ.");
+        System.out.print("Р’РІРµРґРёС‚Рµ РґРёР°РїР°Р·РѕРЅ Р»РµС‚, РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РІРёСЃРѕРєРѕСЃРЅС‹С…:\n" +
+                "РѕС‚ ");
         int a = S.nextInt();
-        System.out.print("до ");
+        System.out.print("РґРѕ ");
         int b = S.nextInt();
-        System.out.println("Високосные года:");
+        System.out.println("Р’РёСЃРѕРєРѕСЃРЅС‹Рµ РіРѕРґР°:");
         IntStream.rangeClosed(a, b)
                 .filter(n -> n% 400 == 0 || (n% 4 == 0 && n% 100 != 0))
                 .forEach(System.out::println);
 
-        //РАСПРЕДЕЛЕНИЕ ПО ЗАКОНУ НОРМАЛЬНОГО РАСПРЕДЕЛЕНИЯ
-        System.out.println("задание - РАСПРЕДЕЛЕНИЕ ПО ЗАКОНУ НОРМАЛЬНОГО РАСПРЕДЕЛЕНИЯ.");
-        System.out.print("Введите кол-во зарплат - ");
+        //Р РђРЎРџР Р•Р”Р•Р›Р•РќРР• РџРћ Р—РђРљРћРќРЈ РќРћР РњРђР›Р¬РќРћР“Рћ Р РђРЎРџР Р•Р”Р•Р›Р•РќРРЇ
+        System.out.println("Р·Р°РґР°РЅРёРµ - Р РђРЎРџР Р•Р”Р•Р›Р•РќРР• РџРћ Р—РђРљРћРќРЈ РќРћР РњРђР›Р¬РќРћР“Рћ Р РђРЎРџР Р•Р”Р•Р›Р•РќРРЇ.");
+        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ Р·Р°СЂРїР»Р°С‚ - ");
         int c = S.nextInt();
 
         Random random = new Random();
